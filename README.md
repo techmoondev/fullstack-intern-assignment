@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TMD: FullStack Intern Assignment
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This assignment involves setting up a simple username/password authentication system using Redux for state management and Next.js for the front-end and back-end. You will create API endpoints with bearer token authentication and implement a custom `useAuthSession` hook to manage the user's session on the client side.
+
+## Your Tasks
+
+1. **Implement the `useAuthSession` Hook**:
+
+   - In `hooks/useAuthSession.ts`, create a custom hook that manages the user's authentication session.
+   - The hook should handle checking if a user is authenticated and fetching user data.
+
+2. **Create and Complete the API Endpoints**:
+
+   - create the required apis
+
+3. **Bearer Token Authentication**:
+   - Implement bearer token authentication in your API endpoints.
+   - Ensure that API requests are secured and only accessible to authenticated users.
+
+## Example Usage of useAuthSession Hook
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+const { user } = useAuthSession();
+
+if (user) {
+  console.log('User:', user.username);
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estimated Time
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Please spend no more than 3-4 hours on this assignment and submit whatever you can complete within that time frame.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Submission
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Ensure all your changes are committed.
+2. Push your changes to a new repository on your personal GitHub account with public access.
+3. Provide a link to your repository, along with your email and phone number, in the provided Google Form. Do not create pull requests in the shared repository.
