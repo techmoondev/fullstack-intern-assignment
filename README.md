@@ -33,6 +33,11 @@ if (user) {
 
 Please spend no more than 3-4 hours on this assignment and submit whatever you can complete within that time frame.
 
+## Bonus Tasks
+
+1. Add validation checks for the login form.
+2. Show toast notifications for errors and successful login.
+
 ## Submission
 
 1. Ensure all your changes are committed.
